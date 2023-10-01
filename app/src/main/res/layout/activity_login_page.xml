@@ -56,7 +56,7 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="32dp"
                 android:fontFamily="sans-serif-light"
-                android:text="Cerita seru berhunung. Cesubung is more than just a platform for connecting stories; it's a platform for connecting people!"
+                android:text="Cerita seru berhunung. Cebung is more than just a platform for connecting stories; it's a platform for connecting people!"
                 android:textColor="#8a8a8e"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
