@@ -13,10 +13,10 @@
         android:fillViewport="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0">
+        app:layout_constraintVertical_bias="0.0">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -63,9 +63,9 @@
                 app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
             <EditText
-                android:id="@+id/txtUsername"
+                android:id="@+id/txtUsernameLogin"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:layout_marginStart="32dp"
                 android:layout_marginEnd="32dp"
                 android:ems="10"
@@ -87,12 +87,12 @@
                 android:text="Password"
                 android:textColor="#171717"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/txtUsername" />
+                app:layout_constraintTop_toBottomOf="@+id/txtUsernameLogin" />
 
             <EditText
-                android:id="@+id/txtPassword"
+                android:id="@+id/txtPasswordLogin"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:layout_marginStart="32dp"
                 android:layout_marginEnd="32dp"
                 android:ems="10"
@@ -121,32 +121,33 @@
                 android:layout_width="0dp"
                 android:layout_height="70dp"
                 android:layout_marginStart="32dp"
+                android:layout_marginTop="116dp"
                 android:layout_marginEnd="32dp"
-                android:layout_marginBottom="8dp"
                 android:backgroundTint="#171717"
                 android:text="Start Reading"
                 android:textAllCaps="false"
                 app:cornerRadius="10dp"
-                app:layout_constraintBottom_toTopOf="@+id/btnRegister"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtPasswordLogin" />
 
             <Button
-                android:id="@+id/btnRegister"
+                android:id="@+id/btnCreateAccount"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
                 android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
                 android:layout_marginEnd="32dp"
-                android:layout_marginBottom="32dp"
                 android:backgroundTint="#FFFFFF"
                 android:text="Create New Account"
                 android:textAllCaps="false"
                 android:textColor="#151E47"
                 app:cornerRadius="10dp"
-                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent" />
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
 
             <ImageView
                 android:id="@+id/imageView5"

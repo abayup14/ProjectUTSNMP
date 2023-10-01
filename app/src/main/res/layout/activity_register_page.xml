@@ -24,9 +24,9 @@
             tools:context=".LoginPage">
 
             <EditText
-                android:id="@+id/txtRePassword1"
+                android:id="@+id/txtRePasswordRegister"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:layout_marginStart="32dp"
                 android:layout_marginEnd="32dp"
                 android:ems="10"
@@ -49,12 +49,12 @@
                 android:text="Re-type Password"
                 android:textColor="#171717"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/txtPassword1" />
+                app:layout_constraintTop_toBottomOf="@+id/txtPasswordRegister" />
 
             <EditText
-                android:id="@+id/txtPassword1"
+                android:id="@+id/txtPasswordRegister"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:layout_marginStart="32dp"
                 android:layout_marginEnd="32dp"
                 android:ems="10"
@@ -77,7 +77,7 @@
                 android:text="Password"
                 android:textColor="#171717"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/txtUrl1" />
+                app:layout_constraintTop_toBottomOf="@+id/txtUrlRegister" />
 
             <TextView
                 android:id="@+id/textView8"
@@ -109,9 +109,9 @@
                 app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
             <EditText
-                android:id="@+id/txtUsername1"
+                android:id="@+id/txtUsernameRegister"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:layout_marginStart="32dp"
                 android:layout_marginEnd="32dp"
                 android:ems="10"
@@ -125,9 +125,9 @@
                 app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
             <EditText
-                android:id="@+id/txtUrl1"
+                android:id="@+id/txtUrlRegister"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:layout_marginStart="32dp"
                 android:layout_marginEnd="32dp"
                 android:ems="10"
@@ -162,23 +162,22 @@
                 android:text="Profile Photo URL"
                 android:textColor="#171717"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/txtUsername1" />
+                app:layout_constraintTop_toBottomOf="@+id/txtUsernameRegister" />
 
             <Button
-                android:id="@+id/btnRegister1"
+                android:id="@+id/btnRegister"
                 android:layout_width="353dp"
                 android:layout_height="61dp"
                 android:layout_marginStart="32dp"
+                android:layout_marginTop="92dp"
                 android:layout_marginEnd="32dp"
-                android:layout_marginBottom="32dp"
                 android:backgroundTint="#171717"
                 android:text="Register"
                 android:textAllCaps="false"
                 app:cornerRadius="10dp"
-                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtRePasswordRegister" />
 
             <Button
                 android:id="@+id/btnCancel"

@@ -13,7 +13,7 @@ class LoginPage : AppCompatActivity() {
         binding = ActivityLoginPageBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.btnRegister.setOnClickListener{
+        binding.btnCreateAccount.setOnClickListener{
             val intent = Intent(this, RegisterPage::class.java)
             startActivity(intent)
         }
