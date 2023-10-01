@@ -7,7 +7,8 @@ android {
     namespace = "com.nmpubaya.cerbung"
     compileSdk = 33
 
-    buildFeatures{
+
+    buildFeatures {
         viewBinding = true
     }
 
