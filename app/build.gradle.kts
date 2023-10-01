@@ -6,7 +6,9 @@ plugins {
 android {
     namespace = "com.nmpubaya.cerbung"
     compileSdk = 33
-
+    buildFeatures{
+        viewBinding = true
+    }
     defaultConfig {
         applicationId = "com.nmpubaya.cerbung"
         minSdk = 27
