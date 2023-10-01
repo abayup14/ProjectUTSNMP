@@ -41,7 +41,7 @@
                 android:layout_marginStart="32dp"
                 android:layout_marginEnd="16dp"
                 android:fontFamily="sans-serif-black"
-                android:text="Welcome to Cesubung"
+                android:text="Welcome to Cerbung"
                 android:textColor="#171717"
                 android:textSize="34sp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -63,7 +63,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
             <EditText
-                android:id="@+id/editTextText2"
+                android:id="@+id/txtUsername"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="32dp"
@@ -87,10 +87,10 @@
                 android:text="Password"
                 android:textColor="#171717"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
+                app:layout_constraintTop_toBottomOf="@+id/txtUsername" />
 
             <EditText
-                android:id="@+id/editTextTextPassword2"
+                android:id="@+id/txtPassword"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="32dp"
@@ -117,14 +117,14 @@
                 app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
             <Button
-                android:id="@+id/btnRegister1"
+                android:id="@+id/btnLogin"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
                 android:layout_marginStart="32dp"
                 android:layout_marginEnd="32dp"
                 android:layout_marginBottom="8dp"
                 android:backgroundTint="#171717"
-                android:text="Start Connecting"
+                android:text="Start Reading"
                 android:textAllCaps="false"
                 app:cornerRadius="10dp"
                 app:layout_constraintBottom_toTopOf="@+id/btnRegister"
