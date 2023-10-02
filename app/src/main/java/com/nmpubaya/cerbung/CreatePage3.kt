@@ -17,5 +17,10 @@ class CreatePage3 : AppCompatActivity() {
             intent = Intent(this, CreatePage2::class.java)
             startActivity(intent)
         }
+
+        binding.btnPublish.setOnClickListener{
+            intent = Intent(this, HomePage::class.java)
+            startActivity(intent)
+        }
     }
 }

@@ -19,86 +19,138 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:background="#f9f9f9">
 
             <TextView
-                android:id="@+id/txtGenre"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="8dp"
-                android:text="Genre"
-                android:textSize="18sp"
-                app:layout_constraintEnd_toStartOf="@+id/txtRestrict"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/txtJudulCerbung" />
-
-            <TextView
-                android:id="@+id/txtDesc"
-                android:layout_width="373dp"
-                android:layout_height="234dp"
-                android:layout_marginTop="44dp"
-                android:text="ini deskripsi"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/txtJudulCerbung" />
-
-            <TextView
-                android:id="@+id/txtJudulCerbung"
+                android:id="@+id/textView26"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="72dp"
-                android:layout_marginEnd="20dp"
-                android:text="Judul Cerbung"
-                android:textSize="24sp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="32dp"
+                android:fontFamily="sans-serif-light"
+                android:text="Ng is an adjunct professor at Stanford University (formerly associate professor and Director of its Stanford AI Lab or SAIL). Ng has also made substantial contributions to the field of online education as the cofounder of both Coursera and DeepLearning.AI. He has spearheaded many efforts to &quot;democratize deep learning&quot; teaching over 2.5 million students through his online courses. He is one of the world's most famous and influential computer scientists being named one of Time magazine's 100 Most Influential People in 2012, and Fast Company's Most Creative People in 2014. In 2018, he launched and currently heads the AI Fund, initially a $175-million investment fund for backing artificial intelligence startups. He has founded Landing AI, which provides AI-powered SaaS products."
+                android:textColor="#434345"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+            <Button
+                android:id="@+id/btnPrev2"
+                android:layout_width="88dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="64dp"
+                android:backgroundTint="#171717"
+                android:text="Prev"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                app:cornerRadius="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/btnPublish"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/checkBox"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <Button
+                android:id="@+id/btnPublish"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="32dp"
+                android:backgroundTint="#fff"
+                android:text="Next"
+                android:textAllCaps="false"
+                android:textColor="#171717"
+                app:cornerRadius="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:fontFamily="sans-serif-light"
+                android:text="Andrew Yan-Tak Ng (Chinese: 吳恩達; born 1976) is a British-American computer scientist and technology entrepreneur focusing on machine learning and artificial intelligence (AI). Ng was a cofounder and head of Google Brain and was the former Chief Scientist at Baidu, building the company's Artificial Intelligence Group into a team of several thousand people."
+                android:textColor="#434345"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="32dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="The Legend of Andrew Ng"
+                android:textColor="#171717"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/txtRestrict"
-                android:layout_width="wrap_content"
+                android:id="@+id/textView23"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
                 android:layout_marginTop="8dp"
-                android:layout_marginEnd="252dp"
-                android:text="Restricted"
-                android:textSize="18sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/txtJudulCerbung" />
+                android:background="#000000"
+                android:fontFamily="sans-serif-medium"
+                android:paddingLeft="15dp"
+                android:paddingTop="5dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="5dp"
+                android:text="AI"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView21" />
 
             <TextView
-                android:id="@+id/txtParagraph"
-                android:layout_width="373dp"
-                android:layout_height="98dp"
-                android:layout_marginTop="32dp"
-                android:text="ini paragraf"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/txtDesc" />
-
-            <Button
-                android:id="@+id/btnPrev2"
-                android:layout_width="wrap_content"
+                android:id="@+id/textView24"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="24dp"
-                android:layout_marginTop="96dp"
-                android:text="Prev"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/txtParagraph" />
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="#000000"
+                android:fontFamily="sans-serif-medium"
+                android:paddingLeft="15dp"
+                android:paddingTop="5dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="5dp"
+                android:text="Machine Learning"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@+id/textView23"
+                app:layout_constraintTop_toBottomOf="@+id/textView21" />
 
-            <Button
-                android:id="@+id/btnPublish"
-                android:layout_width="229dp"
-                android:layout_height="50dp"
-                android:layout_marginTop="96dp"
-                android:text="Publish This Cerbung"
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="I agree with the rules and policies in creating Cerbung. This include not containing racial slurs, discrimination, religion, advertisements, and politics"
+                android:textColor="#171717"
+                android:textSize="12sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.728"
-                app:layout_constraintStart_toEndOf="@+id/btnPrev2"
-                app:layout_constraintTop_toBottomOf="@+id/txtParagraph" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView26" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 

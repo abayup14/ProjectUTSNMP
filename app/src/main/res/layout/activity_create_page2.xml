@@ -9,6 +9,7 @@
     <ScrollView
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:background="#f9f9f9"
         android:fillViewport="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -21,71 +22,125 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
+            <Button
+                android:id="@+id/btnPrev"
+                android:layout_width="88dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginBottom="64dp"
+                android:backgroundTint="#171717"
+                android:text="Prev"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                app:cornerRadius="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/textView15"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtWriteFirstParagraph"
+                app:layout_constraintVertical_bias="1.0" />
+
             <TextView
-                android:id="@+id/textView13"
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="19dp"
+                android:layout_marginEnd="68dp"
+                android:layout_marginBottom="80dp"
+                android:text="2 of 3"
+                android:textColor="#171717"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/btnNext2"
+                app:layout_constraintTop_toBottomOf="@+id/txtWriteFirstParagraph"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <Button
+                android:id="@+id/btnNext2"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginTop="231dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="64dp"
+                android:backgroundTint="#fff"
+                android:text="Next"
+                android:textAllCaps="false"
+                android:textColor="#171717"
+                app:cornerRadius="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtWriteFirstParagraph"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/textView20"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="72dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:fontFamily="sans-serif-medium"
                 android:text="Access to this Cerbung"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.078"
+                android:textColor="#171717"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
             <TextView
                 android:id="@+id/textView14"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="156dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="100dp"
+                android:fontFamily="sans-serif-medium"
                 android:text="Write First Paragraph"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.075"
+                android:textColor="#171717"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView13" />
-
-            <EditText
-                android:id="@+id/txtWriteParagraph"
-                android:layout_width="367dp"
-                android:layout_height="119dp"
-                android:layout_marginTop="16dp"
-                android:ems="10"
-                android:gravity="start|top"
-                android:hint="write your paragraph"
-                android:inputType="textMultiLine"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.477"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView14" />
+                app:layout_constraintTop_toBottomOf="@+id/textView20" />
 
             <TextView
-                android:id="@+id/textView15"
-                android:layout_width="wrap_content"
+                android:id="@+id/textView13"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="140dp"
-                android:text="2 of 3"
-                app:layout_constraintEnd_toStartOf="@+id/btnNext2"
-                app:layout_constraintStart_toEndOf="@+id/btnPrev"
-                app:layout_constraintTop_toBottomOf="@+id/txtWriteParagraph" />
-
-            <Button
-                android:id="@+id/btnNext2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="124dp"
-                android:layout_marginEnd="20dp"
-                android:text="Next"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="32dp"
+                android:fontFamily="sans-serif-light"
+                android:text="Give access to only your trusted friends or family"
+                android:textColor="#8a8a8e"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/txtWriteParagraph" />
-
-            <Button
-                android:id="@+id/btnPrev"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="124dp"
-                android:text="Prev"
+                app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/txtWriteParagraph" />
+                app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="32dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Cerbung Permission"
+                android:textColor="#171717"
+                android:textSize="34sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/txtWriteFirstParagraph"
+                android:layout_width="0dp"
+                android:layout_height="112dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="This story is about the legend who invented OpenAI"
+                android:inputType="textMultiLine"
+                android:paddingStart="12dp"
+                android:textColor="#171717"
+                android:textColorHint="#D5d5d5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView14" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 

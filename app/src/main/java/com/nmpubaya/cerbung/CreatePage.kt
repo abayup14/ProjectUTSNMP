@@ -11,7 +11,10 @@ class CreatePage : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityCreatePageBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
+        binding.btnCancelCerbung.setOnClickListener{
+            intent = Intent(this, HomePage::class.java)
+            startActivity(intent)
+        }
         binding.btnNext.setOnClickListener {
             intent = Intent(this, CreatePage2::class.java)
             startActivity(intent)

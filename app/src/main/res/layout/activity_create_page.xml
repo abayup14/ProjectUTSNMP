@@ -19,7 +19,28 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:background="#f9f9f9">
+
+            <Button
+                android:id="@+id/btnCancelCerbung"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="64dp"
+                android:layout_marginEnd="64dp"
+                android:layout_marginBottom="64dp"
+                android:backgroundTint="#D81616"
+                android:text="Cancel"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                app:cornerRadius="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/textView6"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spinner"
+                app:layout_constraintVertical_bias="1.0" />
 
             <TextView
                 android:id="@+id/textView4"
@@ -43,6 +64,7 @@
                 android:hint="The legend of Andrew Ng"
                 android:inputType="text"
                 android:paddingStart="12dp"
+                android:textColor="#171717"
                 android:textColorHint="#D5D5D5"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
@@ -59,6 +81,7 @@
                 android:hint="https://picsum.photos/200/200"
                 android:inputType="text"
                 android:paddingStart="12dp"
+                android:textColor="#171717"
                 android:textColorHint="#D5D5D5"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
@@ -142,6 +165,7 @@
                 android:hint="This story is about the legend who invented OpenAI"
                 android:inputType="textMultiLine"
                 android:paddingStart="12dp"
+                android:textColor="#171717"
                 android:textColorHint="#D5d5d5"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -152,23 +176,29 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="64dp"
-                android:layout_marginEnd="36dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="64dp"
                 android:backgroundTint="#171717"
                 android:text="Next"
                 android:textAllCaps="false"
+                android:textColor="#fff"
                 app:cornerRadius="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/spinner" />
+                app:layout_constraintTop_toBottomOf="@+id/spinner"
+                app:layout_constraintVertical_bias="1.0" />
 
             <TextView
                 android:id="@+id/textView6"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="184dp"
+                android:layout_height="19dp"
                 android:layout_marginTop="79dp"
+                android:layout_marginEnd="68dp"
+                android:layout_marginBottom="64dp"
                 android:text="1 of 3"
                 android:textColor="#171717"
-                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/btnNext"
                 app:layout_constraintTop_toBottomOf="@+id/spinner" />
 
             <Spinner

@@ -117,6 +117,7 @@
                 android:ems="10"
                 android:hint="VinBayFel2021"
                 android:inputType="text"
+                android:labelFor="@id/textView10"
                 android:paddingStart="12dp"
                 android:textColorHint="#D5D5D5"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -165,17 +166,20 @@
                 app:layout_constraintTop_toBottomOf="@+id/txtUsernameRegister" />
 
             <Button
-                android:id="@+id/btnLogin"
+                android:id="@+id/btnRegister"
 
-                android:layout_width="353dp"
-                android:layout_height="61dp"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
                 android:layout_marginStart="32dp"
-                android:layout_marginTop="80dp"
+                android:layout_marginTop="45dp"
                 android:layout_marginEnd="32dp"
+                android:layout_marginBottom="64dp"
                 android:backgroundTint="#171717"
                 android:text="Register"
                 android:textAllCaps="false"
+                android:textColor="#fff"
                 app:cornerRadius="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/txtRePasswordRegister" />
