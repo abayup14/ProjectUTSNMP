@@ -9,6 +9,7 @@ import com.nmpubaya.cerbung.databinding.ActivityCreatePage3Binding
 
 class CreatePage3 : AppCompatActivity() {
     private lateinit var binding: ActivityCreatePage3Binding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityCreatePage3Binding.inflate(layoutInflater)
@@ -31,11 +32,12 @@ class CreatePage3 : AppCompatActivity() {
         binding.btnPublish.setOnClickListener{
             if (binding.checkBoxAgree.isChecked) {
                 Toast.makeText(this, "Berhasil menambahkan cerbung", Toast.LENGTH_SHORT).show()
+                intent = Intent(this, HomePage::class.java)
+                startActivity(intent)
             } else {
                 Toast.makeText(this, "Jangan lupa untuk meyetujui Terms of Agreement kami", Toast.LENGTH_SHORT).show()
             }
-            intent = Intent(this, HomePage::class.java)
-            startActivity(intent)
+
         }
     }
 }

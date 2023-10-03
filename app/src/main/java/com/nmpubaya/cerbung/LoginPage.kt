@@ -46,12 +46,11 @@ class LoginPage : AppCompatActivity() {
             } else {
                 Toast.makeText(this, "Login gagal. Silahkan coba lagi", Toast.LENGTH_SHORT).show()
             }
-
-            binding.btnCreateAccount.setOnClickListener {
-                val intent = Intent(this, RegisterPage::class.java)
-                startActivity(intent)
-            }
         }
 
+        binding.btnCreateAccount.setOnClickListener {
+            val intent = Intent(this, RegisterPage::class.java)
+            startActivity(intent)
+        }
     }
 }

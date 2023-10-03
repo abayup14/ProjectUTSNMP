@@ -14,6 +14,7 @@ class CreatePage : AppCompatActivity() {
         val IMG_CVR_KEY = "img_cover"
         val GENRE_KEY = "genre"
     }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityCreatePageBinding.inflate(layoutInflater)

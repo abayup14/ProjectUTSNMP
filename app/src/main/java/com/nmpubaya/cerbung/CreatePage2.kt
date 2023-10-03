@@ -29,6 +29,7 @@ class CreatePage2 : AppCompatActivity() {
             intent.putExtra(CreatePage.IMG_CVR_KEY, img_cover)
             startActivity(intent)
         }
+
         binding.btnNext2.setOnClickListener {
             intent = Intent(this, CreatePage3::class.java)
             intent.putExtra(PARAGRAPH_KEY, binding.txtWriteFirstParagraph.text.toString())
