@@ -53,7 +53,7 @@
                 app:layout_constraintEnd_toStartOf="@+id/btnPublish"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/checkBox"
+                app:layout_constraintTop_toBottomOf="@+id/checkBoxAgree"
                 app:layout_constraintVertical_bias="0.0" />
 
             <Button
@@ -63,12 +63,12 @@
                 android:layout_marginTop="32dp"
                 android:layout_marginEnd="32dp"
                 android:backgroundTint="#fff"
-                android:text="Next"
+                android:text="Save"
                 android:textAllCaps="false"
                 android:textColor="#171717"
                 app:cornerRadius="10dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+                app:layout_constraintTop_toBottomOf="@+id/checkBoxAgree" />
 
             <TextView
                 android:id="@+id/textView25"
@@ -138,7 +138,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/textView21" />
 
             <CheckBox
-                android:id="@+id/checkBox"
+                android:id="@+id/checkBoxAgree"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="32dp"

@@ -9,10 +9,6 @@ import com.nmpubaya.cerbung.databinding.ActivityRegisterPageBinding
 class RegisterPage : AppCompatActivity() {
     private lateinit var binding: ActivityRegisterPageBinding
 
-    companion object {
-        val USER = "user"
-    }
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityRegisterPageBinding.inflate(layoutInflater)
