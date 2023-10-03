@@ -35,7 +35,7 @@ class CreatePage3 : AppCompatActivity() {
                 intent = Intent(this, HomePage::class.java)
                 startActivity(intent)
             } else {
-                Toast.makeText(this, "Jangan lupa untuk meyetujui Terms of Agreement kami", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Jangan lupa untuk meyetujui Terms of Agreement kami", Toast.LENGTH_LONG).show()
             }
 
         }
