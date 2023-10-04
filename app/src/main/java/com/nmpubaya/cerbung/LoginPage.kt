@@ -9,11 +9,6 @@ import com.nmpubaya.cerbung.databinding.ActivityLoginPageBinding
 
 class LoginPage : AppCompatActivity() {
     private lateinit var binding: ActivityLoginPageBinding
-
-    companion object {
-        val KEY_USERNAME = "username"
-        val KEY_URL = "url"
-    }
     var url = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {

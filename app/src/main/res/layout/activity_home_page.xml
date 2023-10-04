@@ -26,7 +26,7 @@
                 android:id="@+id/textView22"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="32dp"
+                android:layout_marginStart="16dp"
                 android:layout_marginTop="32dp"
                 android:fontFamily="sans-serif-medium"
                 android:text="Search Cerbung"
@@ -38,7 +38,7 @@
                 android:id="@+id/txtUsernameRegister2"
                 android:layout_width="0dp"
                 android:layout_height="48dp"
-                android:layout_marginStart="32dp"
+                android:layout_marginStart="16dp"
                 android:layout_marginEnd="32dp"
                 android:ems="10"
                 android:hint="The Legend od Andrew Ng"
@@ -73,9 +73,9 @@
             <Button
                 android:id="@+id/btnCreate2"
 
-                android:layout_width="52dp"
+                android:layout_width="wrap_content"
                 android:layout_height="40dp"
-                android:layout_marginStart="32dp"
+                android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
                 android:backgroundTint="#171717"
                 android:text="All"
@@ -88,7 +88,7 @@
             <Button
                 android:id="@+id/btnCreate3"
 
-                android:layout_width="65dp"
+                android:layout_width="wrap_content"
                 android:layout_height="40dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="16dp"
@@ -103,7 +103,7 @@
             <Button
                 android:id="@+id/btnCreate4"
 
-                android:layout_width="81dp"
+                android:layout_width="wrap_content"
                 android:layout_height="40dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="16dp"
@@ -118,7 +118,7 @@
             <Button
                 android:id="@+id/btnCreate5"
 
-                android:layout_width="78dp"
+                android:layout_width="wrap_content"
                 android:layout_height="40dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="16dp"
@@ -140,7 +140,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/btnCreate2" />
+                app:layout_constraintTop_toBottomOf="@+id/btnCreate4" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
