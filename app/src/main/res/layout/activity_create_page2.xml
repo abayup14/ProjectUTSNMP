@@ -27,7 +27,8 @@
                 android:layout_width="88dp"
                 android:layout_height="48dp"
                 android:layout_marginStart="32dp"
-                android:layout_marginBottom="64dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="32dp"
                 android:backgroundTint="#171717"
                 android:text="Prev"
                 android:textAllCaps="false"
@@ -44,22 +45,23 @@
                 android:id="@+id/textView15"
                 android:layout_width="wrap_content"
                 android:layout_height="19dp"
+                android:layout_marginTop="32dp"
                 android:layout_marginEnd="68dp"
-                android:layout_marginBottom="80dp"
+                android:layout_marginBottom="32dp"
                 android:text="2 of 3"
                 android:textColor="#171717"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/btnNext2"
                 app:layout_constraintTop_toBottomOf="@+id/txtWriteFirstParagraph"
-                app:layout_constraintVertical_bias="1.0" />
+                app:layout_constraintVertical_bias="0.95" />
 
             <Button
                 android:id="@+id/btnNext2"
                 android:layout_width="wrap_content"
                 android:layout_height="48dp"
-                android:layout_marginTop="231dp"
+                android:layout_marginTop="32dp"
                 android:layout_marginEnd="32dp"
-                android:layout_marginBottom="64dp"
+                android:layout_marginBottom="32dp"
                 android:backgroundTint="#fff"
                 android:text="Next"
                 android:textAllCaps="false"
@@ -87,12 +89,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="32dp"
-                android:layout_marginTop="100dp"
+                android:layout_marginTop="24dp"
                 android:fontFamily="sans-serif-medium"
                 android:text="Write First Paragraph"
                 android:textColor="#171717"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView20" />
+                app:layout_constraintTop_toBottomOf="@+id/groupPermission" />
 
             <TextView
                 android:id="@+id/textView13"
@@ -141,6 +143,32 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+            <RadioGroup
+                android:id="@+id/groupPermission"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView20">
+
+                <RadioButton
+                    android:id="@+id/radioBtnRestricted"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Restricted"
+                    android:textColor="#171717" />
+
+                <RadioButton
+                    android:id="@+id/radioBtnPublic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Public"
+                    android:textColor="#171717" />
+            </RadioGroup>
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 

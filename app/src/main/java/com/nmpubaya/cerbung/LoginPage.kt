@@ -30,15 +30,12 @@ class LoginPage : AppCompatActivity() {
             }
 
             if (isUserValid) {
-                val builder = AlertDialog.Builder(this)
-                builder.setMessage("You successfully Log In")
-                builder.setPositiveButton("Continue", null)
+                Toast.makeText(this, "Login Success, welcome ${username}", Toast.LENGTH_SHORT).show()
                 val intent = Intent(this, HomePage::class.java)
+                intent.putExtra(CerbungAdapters.CARD_AUTHOR, username)
                 startActivity(intent)
             } else {
-                val builder = AlertDialog.Builder(this)
-                builder.setMessage("Login Failed")
-                builder.setPositiveButton("Retry", null)
+                Toast.makeText(this, "Login Failed", Toast.LENGTH_SHORT).show()
             }
         }
 

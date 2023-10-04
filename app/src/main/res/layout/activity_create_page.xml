@@ -25,11 +25,11 @@
             <Button
                 android:id="@+id/btnCancelCerbung"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:layout_marginStart="32dp"
-                android:layout_marginTop="64dp"
+                android:layout_marginTop="32dp"
                 android:layout_marginEnd="64dp"
-                android:layout_marginBottom="64dp"
+                android:layout_marginBottom="32dp"
                 android:backgroundTint="#D81616"
                 android:text="Cancel"
                 android:textAllCaps="false"
@@ -37,9 +37,9 @@
                 app:cornerRadius="10dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/textView6"
-                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintHorizontal_bias="0.333"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/spinner"
+                app:layout_constraintTop_toBottomOf="@+id/txtCreateGenre"
                 app:layout_constraintVertical_bias="1.0" />
 
             <TextView
@@ -52,10 +52,10 @@
                 android:text="Cerbung Image Cover"
                 android:textColor="#171717"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/txtShortDescription" />
+                app:layout_constraintTop_toBottomOf="@+id/txtCreateShortDescription" />
 
             <EditText
-                android:id="@+id/txtCerbungTitle"
+                android:id="@+id/txtCreateTitle"
                 android:layout_width="0dp"
                 android:layout_height="48dp"
                 android:layout_marginStart="32dp"
@@ -72,7 +72,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/textView18" />
 
             <EditText
-                android:id="@+id/txtImageCoverUrl"
+                android:id="@+id/txtCreateUrl"
                 android:layout_width="0dp"
                 android:layout_height="48dp"
                 android:layout_marginStart="32dp"
@@ -88,6 +88,23 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
+            <EditText
+                android:id="@+id/txtCreateGenre"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:ems="10"
+                android:hint="Hysterical"
+                android:inputType="text"
+                android:paddingStart="12dp"
+                android:textColor="#171717"
+                android:textColorHint="#D5D5D5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
             <TextView
                 android:id="@+id/textView5"
                 android:layout_width="wrap_content"
@@ -98,7 +115,7 @@
                 android:text="Choose Genre"
                 android:textColor="#171717"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/txtImageCoverUrl" />
+                app:layout_constraintTop_toBottomOf="@+id/txtCreateUrl" />
 
             <TextView
                 android:id="@+id/textView18"
@@ -122,7 +139,7 @@
                 android:text="Short Description"
                 android:textColor="#171717"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/txtCerbungTitle" />
+                app:layout_constraintTop_toBottomOf="@+id/txtCreateTitle" />
 
             <TextView
                 android:id="@+id/textView17"
@@ -155,7 +172,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <EditText
-                android:id="@+id/txtShortDescription"
+                android:id="@+id/txtCreateShortDescription"
                 android:layout_width="0dp"
                 android:layout_height="112dp"
                 android:layout_marginStart="32dp"
@@ -174,10 +191,10 @@
             <Button
                 android:id="@+id/btnNext"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="64dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="32dp"
                 android:layout_marginEnd="32dp"
-                android:layout_marginBottom="64dp"
+                android:layout_marginBottom="32dp"
                 android:backgroundTint="#171717"
                 android:text="Next"
                 android:textAllCaps="false"
@@ -185,31 +202,22 @@
                 app:cornerRadius="10dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/spinner"
+                app:layout_constraintTop_toBottomOf="@+id/txtCreateGenre"
                 app:layout_constraintVertical_bias="1.0" />
 
             <TextView
                 android:id="@+id/textView6"
                 android:layout_width="wrap_content"
                 android:layout_height="19dp"
-                android:layout_marginTop="79dp"
                 android:layout_marginEnd="68dp"
-                android:layout_marginBottom="64dp"
+                android:layout_marginBottom="32dp"
                 android:text="1 of 3"
                 android:textColor="#171717"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/btnNext"
-                app:layout_constraintTop_toBottomOf="@+id/spinner" />
+                app:layout_constraintTop_toBottomOf="@+id/txtCreateGenre"
+                app:layout_constraintVertical_bias="0.9" />
 
-            <Spinner
-                android:id="@+id/spinner"
-                android:layout_width="0dp"
-                android:layout_height="48dp"
-                android:layout_marginStart="32dp"
-                android:layout_marginEnd="32dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView5" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 

@@ -8,17 +8,13 @@ import com.nmpubaya.cerbung.databinding.ActivityCreatePageBinding
 class CreatePage : AppCompatActivity() {
     private lateinit var binding:ActivityCreatePageBinding
 
-    companion object {
-        val TITLE_KEY = "title"
-        val DESC_KEY = "desc"
-        val IMG_CVR_KEY = "img_cover"
-        val GENRE_KEY = "genre"
-    }
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityCreatePageBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        //RECEIVE DATA FROM HOME PAGE (CHANGE VAL NAME FROM USERNAME TO AUTHOR)
+        val author = intent.getStringExtra(CerbungAdapters.CARD_AUTHOR)
 
         binding.btnCancelCerbung.setOnClickListener{
             intent = Intent(this, HomePage::class.java)
@@ -27,9 +23,12 @@ class CreatePage : AppCompatActivity() {
 
         binding.btnNext.setOnClickListener {
             intent = Intent(this, CreatePage2::class.java)
-            intent.putExtra(TITLE_KEY, binding.txtCerbungTitle.text.toString())
-            intent.putExtra(DESC_KEY, binding.txtShortDescription.text.toString())
-            intent.putExtra(IMG_CVR_KEY, binding.txtImageCoverUrl.text.toString())
+            //SENDING DATA TO CREATE PAGE 2
+            intent.putExtra(CerbungAdapters.CARD_TITLE, binding.txtCreateTitle.text.toString())
+            intent.putExtra(CerbungAdapters.CARD_AUTHOR, author)
+            intent.putExtra(CerbungAdapters.CARD_SHORT_DESCRIPTION, binding.txtCreateShortDescription.text.toString())
+            intent.putExtra(CerbungAdapters.URL, binding.txtCreateUrl.text.toString())
+            intent.putExtra(CerbungAdapters.CARD_GENRE, binding.txtCreateGenre.text.toString())
             startActivity(intent)
         }
 

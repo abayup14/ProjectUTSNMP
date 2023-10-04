@@ -41,7 +41,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginEnd="32dp"
                 android:ems="10"
-                android:hint="The Legend od Andrew Ng"
+                android:hint="The Legend of Andrew Ng"
                 android:inputType="text"
                 android:labelFor="@id/textView10"
                 android:paddingStart="12dp"

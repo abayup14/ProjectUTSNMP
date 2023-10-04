@@ -13,8 +13,11 @@ class CerbungAdapters(): RecyclerView.Adapter<CerbungAdapters.CerbungViewHodlder
         val URL = "url"
         val CARD_TITLE = "cardtitle"
         val CARD_AUTHOR = "cardauthor"
+        val CARD_PERMISSION = "cardpermission"
         val ICON_LIST = "iconlist"
         val ICON_LIKE = "iconlike"
+        val CARD_GENRE = "cardgenre"
+        val CARD_SHORT_DESCRIPTION = "cardshortdescription"
         val CARD_STORY = "cardstory"
     }
 
@@ -30,8 +33,11 @@ class CerbungAdapters(): RecyclerView.Adapter<CerbungAdapters.CerbungViewHodlder
         val url = Global.cerbung[position].url
         val cardTitle= Global.cerbung[position].title
         val cardAuthor= Global.cerbung[position].author
+        val cardPermission= Global.cerbung[position].permission
         val iconList= Global.cerbung[position].icon_list
         val iconLike= Global.cerbung[position].icon_like
+        val cardGenre = Global.cerbung[position].genre
+        val cardShortDescription= Global.cerbung[position].short_description
         val cardStory= Global.cerbung[position].story
 
         with(holder.binding) {
@@ -43,15 +49,19 @@ class CerbungAdapters(): RecyclerView.Adapter<CerbungAdapters.CerbungViewHodlder
             txtCardAuthor.text = cardAuthor
             txtIconList.text = iconList.toString()
             txtIconLike.text = iconLike.toString()
-            txtCardStory.text = cardStory
+            txtCardGenre.text = cardGenre
+            txtCardShortDescription.text = cardShortDescription
 
             btnRead.setOnClickListener {
                 val intent = Intent(it.context, CerbungFullStoryPage::class.java)
                 intent.putExtra(URL, url)
                 intent.putExtra(CARD_TITLE, cardTitle)
                 intent.putExtra(CARD_AUTHOR, cardAuthor)
+                intent.putExtra(CARD_PERMISSION, cardPermission)
                 intent.putExtra(ICON_LIST, iconList)
                 intent.putExtra(ICON_LIKE, iconLike)
+                intent.putExtra(CARD_GENRE, cardGenre)
+                intent.putExtra(CARD_SHORT_DESCRIPTION, cardShortDescription)
                 intent.putExtra(CARD_STORY, cardStory)
                 it.context.startActivity(intent)
 

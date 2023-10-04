@@ -23,11 +23,11 @@
             android:background="#f9f9f9">
 
             <TextView
-                android:id="@+id/textView26"
+                android:id="@+id/txtCreateStory3"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="32dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="4dp"
                 android:layout_marginEnd="32dp"
                 android:fontFamily="sans-serif-light"
                 android:text="Ng is an adjunct professor at Stanford University (formerly associate professor and Director of its Stanford AI Lab or SAIL). Ng has also made substantial contributions to the field of online education as the cofounder of both Coursera and DeepLearning.AI. He has spearheaded many efforts to &quot;democratize deep learning&quot; teaching over 2.5 million students through his online courses. He is one of the world's most famous and influential computer scientists being named one of Time magazine's 100 Most Influential People in 2012, and Fast Company's Most Creative People in 2014. In 2018, he launched and currently heads the AI Fund, initially a $175-million investment fund for backing artificial intelligence startups. He has founded Landing AI, which provides AI-powered SaaS products."
@@ -35,7 +35,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView25" />
+                app:layout_constraintTop_toBottomOf="@+id/textView21" />
 
             <Button
                 android:id="@+id/btnPrev2"
@@ -71,7 +71,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/checkBoxAgree" />
 
             <TextView
-                android:id="@+id/textView25"
+                android:id="@+id/txtCreateShortDescription3"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="32dp"
@@ -83,10 +83,10 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView24" />
+                app:layout_constraintTop_toBottomOf="@+id/txtCreatePermission3" />
 
             <TextView
-                android:id="@+id/textView21"
+                android:id="@+id/txtCreateTitle3"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="32dp"
@@ -102,7 +102,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/textView23"
+                android:id="@+id/txtCreateGenre3"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="32dp"
@@ -117,10 +117,10 @@
                 android:textColor="#fff"
                 android:textSize="16sp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView21" />
+                app:layout_constraintTop_toBottomOf="@+id/txtCreateTitle3" />
 
             <TextView
-                android:id="@+id/textView24"
+                android:id="@+id/txtCreatePermission3"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
@@ -134,8 +134,8 @@
                 android:text="Machine Learning"
                 android:textColor="#fff"
                 android:textSize="16sp"
-                app:layout_constraintStart_toEndOf="@+id/textView23"
-                app:layout_constraintTop_toBottomOf="@+id/textView21" />
+                app:layout_constraintStart_toEndOf="@+id/txtCreateGenre3"
+                app:layout_constraintTop_toBottomOf="@+id/txtCreateTitle3" />
 
             <CheckBox
                 android:id="@+id/checkBoxAgree"
@@ -150,7 +150,19 @@
                 android:textSize="12sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView26" />
+                app:layout_constraintTop_toBottomOf="@+id/txtCreateStory3" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="0dp"
+                android:layout_height="5dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="32dp"
+                android:text="_"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtCreateShortDescription3" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 
