@@ -31,11 +31,11 @@ class CreatePage3 : AppCompatActivity() {
 
         binding.btnPublish.setOnClickListener{
             if (binding.checkBoxAgree.isChecked) {
-                Toast.makeText(this, "Berhasil menambahkan cerbung", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Cerbung Successfully Created ", Toast.LENGTH_SHORT).show()
                 intent = Intent(this, HomePage::class.java)
                 startActivity(intent)
             } else {
-                Toast.makeText(this, "Jangan lupa untuk meyetujui Terms of Agreement kami", Toast.LENGTH_LONG).show()
+                Toast.makeText(this, "Please agree to our Terms of Agreement", Toast.LENGTH_LONG).show()
             }
 
         }
