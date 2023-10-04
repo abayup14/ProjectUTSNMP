@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import com.nmpubaya.cerbung.databinding.ActivityLoginPageBinding
 
 class LoginPage : AppCompatActivity() {
@@ -34,13 +35,15 @@ class LoginPage : AppCompatActivity() {
             }
 
             if (isUserValid) {
-                Toast.makeText(this, "Welcome to Cerbung, $username", Toast.LENGTH_SHORT).show()
+                val builder = AlertDialog.Builder(this)
+                builder.setMessage("You successfully Log In")
+                builder.setPositiveButton("Continue", null)
                 val intent = Intent(this, HomePage::class.java)
-                intent.putExtra(KEY_USERNAME, username)
-                intent.putExtra(KEY_URL, url)
                 startActivity(intent)
             } else {
-                Toast.makeText(this, "Login gagal. Silahkan coba lagi", Toast.LENGTH_SHORT).show()
+                val builder = AlertDialog.Builder(this)
+                builder.setMessage("Login Failed")
+                builder.setPositiveButton("Retry", null)
             }
         }
 

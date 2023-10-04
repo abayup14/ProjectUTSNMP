@@ -23,6 +23,7 @@ class CreatePage : AppCompatActivity() {
         val username = intent.getStringExtra(LoginPage.KEY_USERNAME)
         val url = intent.getStringExtra(LoginPage.KEY_URL)
 
+
         binding.btnCancelCerbung.setOnClickListener{
             intent = Intent(this, HomePage::class.java)
             intent.putExtra(LoginPage.KEY_USERNAME, username)

@@ -1,10 +1,10 @@
 package com.nmpubaya.cerbung
 
 data class Cerbung(
+    val url: String,
     val title: String,
-    val description: String,
-    val image_url: String,
-    val genre: String,
-    val access: String,
-    val paragraph: String
+    val author: String,
+    val icon_list: Int,
+    val icon_like: Int,
+    val story: String
 )

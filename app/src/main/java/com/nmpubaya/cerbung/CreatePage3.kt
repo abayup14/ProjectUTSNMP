@@ -31,7 +31,7 @@ class CreatePage3 : AppCompatActivity() {
 
         binding.btnPublish.setOnClickListener{
             if (binding.checkBoxAgree.isChecked) {
-                Toast.makeText(this, "Cerbung Successfully Created ", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Cerbung Successfully Created", Toast.LENGTH_SHORT).show()
                 intent = Intent(this, HomePage::class.java)
                 startActivity(intent)
             } else {
