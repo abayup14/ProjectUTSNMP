@@ -26,7 +26,7 @@ class RegisterPage : AppCompatActivity() {
 
             if (password == binding.txtRePasswordRegister.text.toString()) {
                 val user = User(username, profile_url, password)
-                LoginPage.LIST_USER.add(user)
+                Global.LIST_USER.add(user)
                 Toast.makeText(this, "Berhasil. Silahkan login menggunakan akun anda", Toast.LENGTH_SHORT).show()
                 intent = Intent(this, LoginPage::class.java)
                 startActivity(intent)

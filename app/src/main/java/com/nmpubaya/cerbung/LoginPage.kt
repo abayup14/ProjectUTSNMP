@@ -10,10 +10,6 @@ class LoginPage : AppCompatActivity() {
     private lateinit var binding: ActivityLoginPageBinding
 
     companion object {
-        val LIST_USER = arrayListOf(
-            User("Bayu0123", "https://picsum.photos/210/210", "1234"),
-            User("vincent", "https://picsum.photos/210/210","123")
-        )
         val KEY_USERNAME = "username"
         val KEY_URL = "url"
     }
@@ -29,7 +25,7 @@ class LoginPage : AppCompatActivity() {
             val password = binding.txtPasswordLogin.text.toString()
             var isUserValid = false
 
-            for (user in LIST_USER) {
+            for (user in Global.LIST_USER) {
                 if (user.username == username && user.password == password) {
                     url = user.picture_url
                     isUserValid = true
