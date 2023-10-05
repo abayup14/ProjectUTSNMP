@@ -64,7 +64,6 @@ class CerbungAdapters(): RecyclerView.Adapter<CerbungAdapters.CerbungViewHodlder
                 intent.putExtra(CARD_SHORT_DESCRIPTION, cardShortDescription)
                 intent.putExtra(CARD_STORY, cardStory)
                 it.context.startActivity(intent)
-
             }
         }
     }
