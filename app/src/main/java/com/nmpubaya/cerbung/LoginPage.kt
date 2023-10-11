@@ -1,10 +1,9 @@
 package com.nmpubaya.cerbung
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
-import androidx.appcompat.app.AlertDialog
+import androidx.appcompat.app.AppCompatActivity
 import com.nmpubaya.cerbung.databinding.ActivityLoginPageBinding
 
 class LoginPage : AppCompatActivity() {
@@ -34,6 +33,7 @@ class LoginPage : AppCompatActivity() {
                 val intent = Intent(this, HomePage::class.java)
                 intent.putExtra(CerbungAdapters.CARD_AUTHOR, username)
                 startActivity(intent)
+                finish()
             } else {
                 Toast.makeText(this, "Login Failed", Toast.LENGTH_SHORT).show()
             }

@@ -21,7 +21,7 @@ class CerbungAdapters(): RecyclerView.Adapter<CerbungAdapters.CerbungViewHodlder
         val CARD_STORY = "cardstory"
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CerbungAdapters.CerbungViewHodlder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CerbungViewHodlder {
         val binding = CerbungItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return CerbungViewHodlder(binding)
     }
@@ -29,7 +29,7 @@ class CerbungAdapters(): RecyclerView.Adapter<CerbungAdapters.CerbungViewHodlder
         return Global.cerbung.size
     }
 
-    override fun onBindViewHolder(holder: CerbungAdapters.CerbungViewHodlder, position: Int) {
+    override fun onBindViewHolder(holder: CerbungViewHodlder, position: Int) {
         val url = Global.cerbung[position].url
         val cardTitle= Global.cerbung[position].title
         val cardAuthor= Global.cerbung[position].author
