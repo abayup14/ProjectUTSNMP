@@ -7,8 +7,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.nmpubaya.cerbung.databinding.CerbungItemBinding
 import com.squareup.picasso.Picasso
 
-class CerbungAdapters(): RecyclerView.Adapter<CerbungAdapters.CerbungViewHodlder>() {
-    class CerbungViewHodlder(val binding: CerbungItemBinding): RecyclerView.ViewHolder(binding.root)
+class CerbungAdapters(): RecyclerView.Adapter<CerbungAdapters.CerbungViewHolder>() {
+    class CerbungViewHolder(val binding: CerbungItemBinding): RecyclerView.ViewHolder(binding.root)
     companion object {
         val URL = "url"
         val CARD_TITLE = "cardtitle"
@@ -21,15 +21,15 @@ class CerbungAdapters(): RecyclerView.Adapter<CerbungAdapters.CerbungViewHodlder
         val CARD_STORY = "cardstory"
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CerbungViewHodlder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CerbungViewHolder {
         val binding = CerbungItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
-        return CerbungViewHodlder(binding)
+        return CerbungViewHolder(binding)
     }
     override fun getItemCount(): Int {
         return Global.cerbung.size
     }
 
-    override fun onBindViewHolder(holder: CerbungViewHodlder, position: Int) {
+    override fun onBindViewHolder(holder: CerbungViewHolder, position: Int) {
         val url = Global.cerbung[position].url
         val cardTitle= Global.cerbung[position].title
         val cardAuthor= Global.cerbung[position].author
