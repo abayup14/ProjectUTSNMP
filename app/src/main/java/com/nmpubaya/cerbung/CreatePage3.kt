@@ -50,7 +50,7 @@ class CreatePage3 : AppCompatActivity() {
                 val newCrebung = Cerbung(url.toString(), title.toString(), author.toString(), permission,
                     0, 0, genre.toString(), short_description.toString(), story.toString())
                 Global.cerbung.add(newCrebung)
-                Toast.makeText(this, "Cerbung Successfully Created", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Cerbung $title Successfully Created", Toast.LENGTH_SHORT).show()
                 intent = Intent(this, HomePage::class.java)
                 startActivity(intent)
                 finish()
