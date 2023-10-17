@@ -27,17 +27,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="48dp"
                 android:layout_marginStart="32dp"
-                android:layout_marginEnd="64dp"
-                android:layout_marginBottom="32dp"
+                android:layout_marginTop="104dp"
                 android:backgroundTint="#D81616"
                 android:text="Cancel"
                 android:textAllCaps="false"
                 android:textColor="#fff"
                 app:cornerRadius="10dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/textView6"
-                app:layout_constraintHorizontal_bias="0.333"
-                app:layout_constraintStart_toStartOf="parent" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spinGenre" />
 
             <TextView
                 android:id="@+id/textView4"
@@ -172,26 +169,29 @@
                 android:id="@+id/btnNext"
                 android:layout_width="wrap_content"
                 android:layout_height="48dp"
+                android:layout_marginTop="104dp"
                 android:layout_marginEnd="32dp"
-                android:layout_marginBottom="32dp"
                 android:backgroundTint="#171717"
                 android:text="Next"
                 android:textAllCaps="false"
                 android:textColor="#fff"
                 app:cornerRadius="10dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent" />
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spinGenre" />
 
             <TextView
                 android:id="@+id/textView6"
                 android:layout_width="wrap_content"
                 android:layout_height="19dp"
+                android:layout_marginStart="67dp"
+                android:layout_marginTop="124dp"
                 android:layout_marginEnd="68dp"
-                android:layout_marginBottom="32dp"
                 android:text="1 of 3"
                 android:textColor="#171717"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/btnNext" />
+                app:layout_constraintEnd_toStartOf="@+id/btnNext"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/btnCancelCerbung"
+                app:layout_constraintTop_toBottomOf="@+id/spinGenre" />
 
             <Spinner
                 android:id="@+id/spinGenre"
@@ -204,6 +204,13 @@
                 app:layout_constraintHorizontal_bias="0.54"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="203dp" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>

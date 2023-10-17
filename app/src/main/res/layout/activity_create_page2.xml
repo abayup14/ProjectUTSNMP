@@ -27,50 +27,41 @@
                 android:layout_width="88dp"
                 android:layout_height="48dp"
                 android:layout_marginStart="32dp"
-                android:layout_marginTop="32dp"
-                android:layout_marginBottom="32dp"
+                android:layout_marginTop="240dp"
                 android:backgroundTint="#171717"
                 android:text="Prev"
                 android:textAllCaps="false"
                 android:textColor="#fff"
                 app:cornerRadius="10dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/textView15"
-                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/txtWriteFirstParagraph"
-                app:layout_constraintVertical_bias="1.0" />
+                app:layout_constraintTop_toBottomOf="@+id/txtWriteFirstParagraph" />
 
             <TextView
                 android:id="@+id/textView15"
                 android:layout_width="wrap_content"
                 android:layout_height="19dp"
-                android:layout_marginTop="32dp"
-                android:layout_marginEnd="68dp"
-                android:layout_marginBottom="32dp"
+                android:layout_marginTop="252dp"
+                android:layout_marginEnd="60dp"
                 android:text="2 of 3"
                 android:textColor="#171717"
-                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/btnNext2"
-                app:layout_constraintTop_toBottomOf="@+id/txtWriteFirstParagraph"
-                app:layout_constraintVertical_bias="0.95" />
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/btnPrev"
+                app:layout_constraintTop_toBottomOf="@+id/txtWriteFirstParagraph" />
 
             <Button
                 android:id="@+id/btnNext2"
                 android:layout_width="wrap_content"
                 android:layout_height="48dp"
-                android:layout_marginTop="32dp"
-                android:layout_marginEnd="32dp"
-                android:layout_marginBottom="32dp"
+                android:layout_marginTop="240dp"
+                android:layout_marginEnd="40dp"
                 android:backgroundTint="#fff"
                 android:text="Next"
                 android:textAllCaps="false"
                 android:textColor="#171717"
                 app:cornerRadius="10dp"
-                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/txtWriteFirstParagraph"
-                app:layout_constraintVertical_bias="1.0" />
+                app:layout_constraintTop_toBottomOf="@+id/txtWriteFirstParagraph" />
 
             <TextView
                 android:id="@+id/textView20"
@@ -168,6 +159,13 @@
                     android:text="Public"
                     android:textColor="#171717" />
             </RadioGroup>
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="203dp" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>

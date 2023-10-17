@@ -13,7 +13,7 @@
         android:fillViewport="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0">
@@ -70,6 +70,7 @@
                 android:layout_marginStart="32dp"
                 android:layout_marginEnd="32dp"
                 android:ems="10"
+                android:focusable="auto"
                 android:hint="VinBayFel2021"
                 android:inputType="text"
                 android:paddingStart="12dp"
@@ -98,6 +99,7 @@
                 android:layout_marginStart="32dp"
                 android:layout_marginEnd="32dp"
                 android:ems="10"
+                android:focusable="auto"
                 android:hint="rahasia123"
                 android:inputType="textPassword"
                 android:paddingStart="12dp"
@@ -124,36 +126,34 @@
                 android:layout_width="0dp"
                 android:layout_height="70dp"
                 android:layout_marginStart="32dp"
+                android:layout_marginTop="92dp"
                 android:layout_marginEnd="32dp"
-                android:layout_marginBottom="4dp"
                 android:backgroundTint="#171717"
                 android:text="Start Reading"
                 android:textAllCaps="false"
                 android:textColor="#fff"
                 app:cornerRadius="10dp"
-                app:layout_constraintBottom_toTopOf="@+id/btnCreateAccount"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/txtPasswordLogin"
-                app:layout_constraintVertical_bias="1.0" />
+                app:layout_constraintTop_toBottomOf="@+id/txtPasswordLogin" />
 
             <Button
                 android:id="@+id/btnCreateAccount"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
                 android:layout_marginStart="32dp"
+                android:layout_marginTop="22dp"
                 android:layout_marginEnd="32dp"
-                android:layout_marginBottom="64dp"
                 android:backgroundTint="#FFFFFF"
                 android:text="Create New Account"
                 android:textAllCaps="false"
                 android:textColor="#171717"
                 app:cornerRadius="10dp"
-                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintStart_toStartOf="parent" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
 
             <ImageView
                 android:id="@+id/imageView5"

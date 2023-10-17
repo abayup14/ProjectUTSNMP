@@ -27,10 +27,10 @@ class CreatePage3 : AppCompatActivity() {
         binding.txtCreateTitle3.text = title
         binding.txtCreateGenre3.text = genre
         var permission_text = ""
-        permission_text = if (permission)
-            "Restricted"
+        if (permission == true)
+            permission_text = "Restricted"
         else
-            "Public"
+            permission_text = "Public"
         binding.txtCreatePermission3.text = permission_text
         binding.txtCreateShortDescription3.text = short_description
         binding.txtCreateStory3.text = story
@@ -53,6 +53,7 @@ class CreatePage3 : AppCompatActivity() {
                 Toast.makeText(this, "Cerbung Successfully Created", Toast.LENGTH_SHORT).show()
                 intent = Intent(this, HomePage::class.java)
                 startActivity(intent)
+                finish()
             } else {
                 Toast.makeText(this, "Please agree to our Terms of Agreement", Toast.LENGTH_LONG).show()
             }

@@ -43,18 +43,15 @@
                 android:layout_height="48dp"
                 android:layout_marginStart="32dp"
                 android:layout_marginTop="32dp"
-                android:layout_marginBottom="64dp"
                 android:backgroundTint="#171717"
                 android:text="Prev"
                 android:textAllCaps="false"
                 android:textColor="#fff"
                 app:cornerRadius="10dp"
-                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/btnPublish"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/checkBoxAgree"
-                app:layout_constraintVertical_bias="0.0" />
+                app:layout_constraintTop_toBottomOf="@+id/checkBoxAgree" />
 
             <Button
                 android:id="@+id/btnPublish"

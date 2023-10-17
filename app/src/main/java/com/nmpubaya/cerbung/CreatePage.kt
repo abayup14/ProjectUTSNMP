@@ -1,6 +1,5 @@
 package com.nmpubaya.cerbung
 
-import android.R
 import android.content.Intent
 import android.os.Bundle
 import android.widget.ArrayAdapter
@@ -18,7 +17,7 @@ class CreatePage : AppCompatActivity() {
         //RECEIVE DATA FROM HOME PAGE (CHANGE VAL NAME FROM USERNAME TO AUTHOR)
         val author = intent.getStringExtra(CerbungAdapters.CARD_AUTHOR)
 
-        val adapter = ArrayAdapter(this, R.layout.simple_list_item_1, Global.genre)
+        val adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, Global.genre)
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         binding.spinGenre.adapter = adapter
 
@@ -34,7 +33,7 @@ class CreatePage : AppCompatActivity() {
             intent.putExtra(CerbungAdapters.CARD_AUTHOR, author)
             intent.putExtra(CerbungAdapters.CARD_SHORT_DESCRIPTION, binding.txtCreateShortDescription.text.toString())
             intent.putExtra(CerbungAdapters.URL, binding.txtCreateUrl.text.toString())
-            //intent.putExtra(CerbungAdapters.CARD_GENRE, binding..text.toString())
+            intent.putExtra(CerbungAdapters.CARD_GENRE, binding.spinGenre.selectedItem.toString())
             startActivity(intent)
         }
 
