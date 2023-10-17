@@ -1,7 +1,7 @@
 package com.nmpubaya.cerbung
 
 data class Cerbung(
-    val url: String?,
+    val url: String,
     val title: String,
     val author: String,
     val permission: Boolean,
