@@ -22,6 +22,8 @@ class CreatePage2 : AppCompatActivity() {
         val genre = intent.getStringExtra(CerbungAdapters.CARD_GENRE)
         val short_description = intent.getStringExtra(CerbungAdapters.CARD_SHORT_DESCRIPTION)
 
+        binding.txtWriteFirstParagraph.setText(intent.getStringExtra(CerbungAdapters.CARD_STORY))
+
         //RADIO BUTTON
         var permission: Boolean = false
         binding.groupPermission.setOnCheckedChangeListener { radioGroup, id ->
@@ -31,9 +33,9 @@ class CreatePage2 : AppCompatActivity() {
 
         binding.btnPrev.setOnClickListener {
             intent = Intent(this, CreatePage::class.java)
-//            intent.putExtra(CreatePage.TITLE_KEY, title)
-//            intent.putExtra(CreatePage.DESC_KEY, desc)
-//            intent.putExtra(CreatePage.IMG_CVR_KEY, img_cover)
+            intent.putExtra(CerbungAdapters.CARD_TITLE, title)
+            intent.putExtra(CerbungAdapters.CARD_SHORT_DESCRIPTION, short_description)
+            intent.putExtra(CerbungAdapters.URL, url)
             startActivity(intent)
         }
 

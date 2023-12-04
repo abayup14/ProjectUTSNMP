@@ -17,10 +17,13 @@ class CreatePage : AppCompatActivity() {
         //RECEIVE DATA FROM HOME PAGE (CHANGE VAL NAME FROM USERNAME TO AUTHOR)
         val author = intent.getStringExtra(CerbungAdapters.CARD_AUTHOR)
 
+        binding.txtCreateTitle.setText(intent.getStringExtra(CerbungAdapters.CARD_TITLE))
+        binding.txtCreateShortDescription.setText(intent.getStringExtra(CerbungAdapters.CARD_SHORT_DESCRIPTION))
+        binding.txtCreateUrl.setText(intent.getStringExtra(CerbungAdapters.URL))
+
         val adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, Global.genre)
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         binding.spinGenre.adapter = adapter
-
         binding.btnCancelCerbung.setOnClickListener{
             intent = Intent(this, HomePage::class.java)
             startActivity(intent)

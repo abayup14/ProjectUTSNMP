@@ -38,10 +38,10 @@ class CreatePage3 : AppCompatActivity() {
 
         binding.btnPrev2.setOnClickListener {
             intent = Intent(this, CreatePage2::class.java)
-//            intent.putExtra(CreatePage2.PARAGRAPH_KEY, paragraph)
-//            intent.putExtra(CreatePage.TITLE_KEY, title)
-//            intent.putExtra(CreatePage.DESC_KEY, desc)
-//            intent.putExtra(CreatePage.IMG_CVR_KEY, img_cover)
+            intent.putExtra(CerbungAdapters.CARD_STORY, story)
+            intent.putExtra(CerbungAdapters.CARD_TITLE, title)
+            intent.putExtra(CerbungAdapters.CARD_SHORT_DESCRIPTION, short_description)
+            intent.putExtra(CerbungAdapters.URL, url)
             startActivity(intent)
         }
 
@@ -52,12 +52,12 @@ class CreatePage3 : AppCompatActivity() {
                 Global.cerbung.add(newCrebung)
                 Toast.makeText(this, "Cerbung $title Successfully Created", Toast.LENGTH_SHORT).show()
                 intent = Intent(this, HomePage::class.java)
+                intent.putExtra(CerbungAdapters.CARD_AUTHOR, author)
                 startActivity(intent)
                 finish()
             } else {
                 Toast.makeText(this, "Please agree to our Terms of Agreement", Toast.LENGTH_LONG).show()
             }
-
         }
     }
 }
